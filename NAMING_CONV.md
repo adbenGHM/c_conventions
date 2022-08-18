@@ -117,7 +117,40 @@
 
 3.  Must be prefixed with file name.
 4.  File name and function name should be seperated using an underscore.
+5.  Function name must be prefixed with their return type.`*`.  
 
-    >   Example:    file name `app_sensor.h`
+    -   Type uint32_t: use prefix *ul*.
+    -   Type uint16_t: use prefix *us*.
+    -   Type uint8_t: use prefix *uc*.
+    -   Type void: use prefix *v*.
+    -   Any other return type: use prefix *x*.
+    -   Type pointer: use prefix *p* in addition to the above return type.
+  
 
-    >   `app_sensor_GetSensorData()`
+    Example:    file name `app_sensor.h`
+
+    `app_sensor_GetSensorData()`
+
+
+>   ENUMERATIONS
+
+1.  Enum elements must be under a typedef.
+2.	Typedef naming conventions must be strictly followed.
+3.	Enum elements must be all capital case. 
+4.	Enum elements must be followed by the enum typedef name.
+
+    Example: File name `app_sensor.c`
+
+            typedef enum __app_sensor_dataFetchState        {
+                APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
+                APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
+                APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
+            }app_sensor_dataFetchState_t;   
+
+
+>   NOTES
+
+`*` **NOT MANDATORY**
+
+
+
