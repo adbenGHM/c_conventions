@@ -87,8 +87,7 @@
             typedef struct exampleStruct{
     
             }exampleStruct_t;
-    
-            
+          
     `exampleStruct_t exampleStruct`    **WRONG**
     
     
