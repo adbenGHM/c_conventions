@@ -161,7 +161,7 @@
 
 >   **GENERIC**
 
-1. Never use **__** or **_** **prefix** for variables/functions/macros/types. This is reserved for C language itself 
+1. Never use `__ or _` **prefix** for variables/functions/macros/types. This is reserved for C language itself 
 
 
 >   **NOTES**
