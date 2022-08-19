@@ -11,7 +11,7 @@
  8. [Generic](#generic)
  9. [Notes](#notes)
 
-<p>&nbsp;</p>
+&nbsp;
 
 >  ### **FILE NAME**
 
@@ -101,8 +101,9 @@
             }exampleStruct_t;
           
     `exampleStruct_t exampleStruct`    **WRONG**
-    
-    <p>&nbsp;</p>
+
+    &nbsp;
+
 
     Now if these typedef variables are decalared anywhere, it must follow the variable naming conventions.
 
