@@ -80,7 +80,7 @@
                 int manufactureDate;
                 float serialNum;
             }app_sensor_devInfo_t;
-5.  Typedef variable name should not be same as typedef name or typedef tag
+5.  Typedef variable name should not be same as typedef name or typedef tag 
 
     Example:
     
@@ -88,7 +88,8 @@
     
             }exampleStruct_t;
     
-            exampleStruct_t exampleStruct   **WRONG**
+            
+    >   >  exampleStruct_t exampleStruct    **WRONG**
     
     
     
