@@ -89,7 +89,7 @@
             }exampleStruct_t;
     
             
-    >   >  exampleStruct_t exampleStruct    **WRONG**
+    exampleStruct_t exampleStruct    **WRONG**
     
     
     
