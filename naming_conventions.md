@@ -64,18 +64,18 @@
 
 2.  Typedef name must be prefixed by the file name if not declared static (or under a src scope only).
 3.  Typedef must be terminated with *_t*
-4.  Typedef name (if used) should be same as typedef without the suffixed *_t* and prefixed with two underscore.
+4.  Typedef tag (if used) should be same as typedef without the suffixed *_t*.
 
     Example: File name `app_sensor.c`
 
-            typedef enum __app_sensor_dataFetchState        {
+            typedef enum app_sensor_dataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
                 APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
                 APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
             }app_sensor_dataFetchState_t;   
 
 
-            typedef struct __app_sensor_devInfo     {
+            typedef struct app_sensor_devInfo     {
                 int deviceId;
                 int manufactureDate;
                 float serialNum;
@@ -141,7 +141,7 @@
 
     Example: File name `app_sensor.c`
 
-            typedef enum __app_sensor_dataFetchState        {
+            typedef enum app_sensor_dataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
                 APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
                 APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
