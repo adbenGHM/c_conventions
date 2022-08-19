@@ -1,5 +1,5 @@
-# C NAMING CONVENTIONS 
-
+## <u>**C NAMING CONVENTIONS**</u>
+&nbsp;
 >   ## Table of Contents
  1. [File name](#file-name)
  2. [Macros](#macros)
