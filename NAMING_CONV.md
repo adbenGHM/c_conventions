@@ -110,14 +110,14 @@
 
 >   PUBLIC FUNCTIONS
 
-1.  Function name must contain a verb.
+1.  Function name must contain a verb, preferably start with verb.
 2.  Function name must be in upper camel case (Pascal Case)
 
     Example:    `UpperCamelCase`
 
 3.  Must be prefixed with file name.
 4.  File name and function name should be seperated using an underscore.
-5.  Function name must be prefixed with their return type.`*`.  
+5.  Function name might be prefixed with their return type.`*`.  
 
     -   Type uint32_t: use prefix *ul*.
     -   Type uint16_t: use prefix *us*.
