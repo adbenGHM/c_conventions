@@ -1,5 +1,15 @@
 # C NAMING CONVENTIONS 
 
+## Table of Contents
+ - [File name](#file-name)
+ - [Macros](#macros)
+ - [Variables](#variables)
+ - [Typedefs](#typedefs)
+ - [Private Functions](#private-functions)
+ - [Public Functions](#public-functions)
+ - [Enumarations](#enumerations)
+ - [Generic](#generic)
+ - [Notes](#notes)
 
 >  ### **FILE NAME**
 
@@ -159,6 +169,8 @@
             }app_sensor_dataFetchState_t;   
 
 >  ### **GENERIC**
+
+This are to be followed for every namings, unless specified
 
 1. Never use `__ or _` **prefix** for variables/functions/macros/types. This is reserved for C language itself 
 
