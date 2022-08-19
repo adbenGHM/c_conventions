@@ -50,7 +50,7 @@
 
 8.  Variable name should never start with a verb.
 
-    Ecample:    
+    Example:    
     `runDevice` **WRONG**
 
     `isDeviceRunning`   **RIGHT**  
@@ -84,11 +84,11 @@
 
     Example:
     
-    typedef struct exampleStruct{
+            typedef struct exampleStruct{
     
-    }exampleStruct_t;
+            }exampleStruct_t;
     
-    exampleStruct_t exampleStruct   **WRONG**
+            exampleStruct_t exampleStruct   **WRONG**
     
     
     
