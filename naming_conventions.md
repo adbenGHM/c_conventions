@@ -1,15 +1,17 @@
 # C NAMING CONVENTIONS 
 
-## Table of Contents
- - [File name](#file-name)
- - [Macros](#macros)
- - [Variables](#variables)
- - [Typedefs](#typedefs)
- - [Private Functions](#private-functions)
- - [Public Functions](#public-functions)
- - [Enumarations](#enumerations)
- - [Generic](#generic)
- - [Notes](#notes)
+>   ## Table of Contents
+ 1. [File name](#file-name)
+ 2. [Macros](#macros)
+ 3. [Variables](#variables)
+ 4. [Typedefs](#typedefs)
+ 5. [Private Functions](#private-functions)
+ 6. [Public Functions](#public-functions)
+ 7. [Enumarations](#enumerations)
+ 8. [Generic](#generic)
+ 9. [Notes](#notes)
+
+<p>&nbsp;</p>
 
 >  ### **FILE NAME**
 
@@ -100,8 +102,8 @@
           
     `exampleStruct_t exampleStruct`    **WRONG**
     
-    
-    
+    <p>&nbsp;</p>
+
     Now if these typedef variables are decalared anywhere, it must follow the variable naming conventions.
 
     Example:
