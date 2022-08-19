@@ -81,7 +81,9 @@
                 float serialNum;
             }app_sensor_devInfo_t;
 5.  Typedef variable name should not be same as typedef name or typedef tag
+
     Example:
+    
     typedef struct exampleStruct{
     
     }exampleStruct_t;
