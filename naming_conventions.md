@@ -1,13 +1,13 @@
-# NAMING CONVENTIONS FOR FIRMWARE
+# C NAMING CONVENTIONS 
 
 
->   **FILE NAME**
+>  ### **FILE NAME**
 
 1.  All lower case with all the words seperated by underscore.
 
     Example:   `example_file_name.x` , .x = file extention
 
->   **MACROS**
+>  ### **MACROS**
 
 1.  All capital case with words separated by an Underscore. 
 2.  Must be prefixed by the file name.
@@ -16,7 +16,7 @@
 
     Macro Name: `APP_SENSOR_DEVICE_ADDR`
 
->   **VARIABLES**
+>  ### **VARIABLES**
 
 1.  Every variable name must be self-explanatory.
 2.	Variable name must be in lower camel case.
@@ -56,7 +56,7 @@
     `isDeviceRunning`   **RIGHT**  
 
 
->   **TYPEDEFS**
+>  ### **TYPEDEFS**
 
 1.  Typedef name must be in upper camel case.
 
@@ -108,7 +108,7 @@
 
     `app_sensor_dataFetchState_t *app_sensor_pSampleVar`        *(point 2 of **TYPEDEFS**)*
 
->   **PRIVATE FUNCTIONS**
+>  ### **PRIVATE FUNCTIONS**
 
 1.  These functions should be strictly defined and declared in the source file only.
 2.  Function name must contain a verb.
@@ -119,7 +119,7 @@
 4.  Must be declared as static.
 5.  File name prefixing should not be used.    
 
->   **PUBLIC FUNCTIONS**
+>  ### **PUBLIC FUNCTIONS**
 
 1.  Function name must contain a verb, preferably start with verb.
 2.  Function name must be in upper camel case (Pascal Case)
@@ -143,7 +143,7 @@
     `app_sensor_GetSensorData()`
 
 
->   **ENUMERATIONS**
+>  ### **ENUMERATIONS**
 
 1.  Enum elements must be under a typedef.
 2.	Typedef naming conventions must be strictly followed.
@@ -158,12 +158,12 @@
                 APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
             }app_sensor_dataFetchState_t;   
 
->   **GENERIC**
+>  ### **GENERIC**
 
 1. Never use `__ or _` **prefix** for variables/functions/macros/types. This is reserved for C language itself 
 
 
->   **NOTES**
+>  ### **NOTES**
 
 `*` **NOT MANDATORY**
 
