@@ -1,6 +1,6 @@
 ## <u>**C NAMING CONVENTIONS**</u>
 &nbsp;
->   ## Table of Contents
+>   ### **TABLE OF CONTENTS**
  1. [File name](#file-name)
  2. [Macros](#macros)
  3. [Variables](#variables)
