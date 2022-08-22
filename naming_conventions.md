@@ -70,37 +70,25 @@
 
 >  ### **TYPEDEFS**
 
-1.  Typedef name must be in upper camel case.
-
-
-
+1.  Typedef name must be in lower camel case.
 2.  Typedef name must be prefixed by the file name if not declared static (or under a src scope only).
 3.  Typedef must be terminated with *_t*
-4.  Typedef tag (if used) should be same as typedef without the suffixed *_t*.
+4.  Typedef tag (if used) should be same as typedef with the `tag` word appended.
 
     Example: File name `app_sensor.c`
 
-            typedef enum app_sensor_dataFetchState        {
+            typedef enum app_sensor_tagDataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
                 APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
                 APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
             }app_sensor_dataFetchState_t;   
 
 
-            typedef struct app_sensor_devInfo     {
+            typedef struct app_sensor_tagDevInfo     {
                 int deviceId;
                 int manufactureDate;
                 float serialNum;
             }app_sensor_devInfo_t;
-5.  Typedef variable name should not be same as typedef name or typedef tag 
-
-    Example:
-    
-            typedef struct exampleStruct{
-    
-            }exampleStruct_t;
-          
-    `exampleStruct_t exampleStruct`    **WRONG**
 
     &nbsp;
 
@@ -137,7 +125,7 @@
 1.  Function name must contain a verb, preferably start with verb.
 2.  Function name must be in upper camel case (Pascal Case)
 
-    Example:    `UpperCamelCase`
+    Example:    `example_file_UpperCamelCase`
 
 3.  Must be prefixed with file name.
 4.  File name and function name should be seperated using an underscore.
