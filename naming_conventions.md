@@ -153,7 +153,7 @@
 
     Example: File name `app_sensor.c`
 
-            typedef enum app_sensor_dataFetchState        {
+            typedef enum app_sensor_tagDataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
                 APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
                 APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
