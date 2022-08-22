@@ -112,7 +112,7 @@
 >  ### **PRIVATE FUNCTIONS**
 
 1.  These functions should be strictly defined and declared in the source file only.
-2.  Function name must contain a verb.
+2.  Function name must contain a verb, preferably start with verb.
 3.  Function name must be in upper camel case (Pascal Case)
     
     Example:    `UpperCamelCase`
