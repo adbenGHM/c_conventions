@@ -62,20 +62,28 @@
 8.  All array name must have resonable suffix or prefix , like ***arr***, ***table***,***matrix*** to identify as array for example
 
     Example :
+    
     `int numbers[]`      **WRONG**
+
     `int numbersArr[]`   **RIGHT**
+
     `int arrOfNumbers[]` **RIGHT**
+
 9. Char array or pointer intended to be used as ASCII string must be suffixed or prefixed with ***string*** or ***str***
 
     Example:
+
     `char strSample[]`
+
     `char smapleString[]`
+
     `char *pSampleStr`
 
 9.  Variable name should never start with a verb.
 
     Example:    
     `runningDevice`     **WRONG**
+
     `isDeviceRunning`   **RIGHT**  
 
 
