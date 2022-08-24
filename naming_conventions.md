@@ -148,14 +148,14 @@
 
 3.  Must be prefixed with file name.
 4.  File name and function name should be seperated using an underscore.
-5.  Function name might be prefixed with their return type.`*`.  
+5.  Function name might be suffixed with their return type.`*`.  
 
-    -   Type uint32_t: use prefix *ul*.
-    -   Type uint16_t: use prefix *us*.
-    -   Type uint8_t: use prefix *uc*.
-    -   Type void: use prefix *v*.
-    -   Any other return type: use prefix *x*.
-    -   Type pointer: use prefix *p* in addition to the above return type.
+    -   Type uint32_t: use suffix *_ul*.
+    -   Type uint16_t: use suffix *_us*.
+    -   Type uint8_t: use suffix *_uc*.
+    -   Type void: use suffix *_v*.
+    -   Any other return type: use suffix *_x*.
+    -   Type pointer: use suffix *_p* in addition to the above return type.
   
 
     Example:    file name `app_sensor.h`
