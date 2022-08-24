@@ -17,14 +17,14 @@
 
 1.  All lower case with all the words seperated by underscore.
 
-    Example:   `example_file_name.x` , .x = file extention
+    <u>**Example :**</u>   `example_file_name.x` , .x = file extention
 
 >  ### **MACROS**
 
 1.  All capital case with words separated by an Underscore. 
 2.  Must be prefixed by the file name.
 
-    Example: Considering file name as, `app_sensor.h`,
+    <u>**Example :**</u> Considering file name as, `app_sensor.h`,
 
     Macro Name: `APP_SENSOR_DEVICE_ADDR`
 
@@ -32,14 +32,21 @@
 
 1.  Every variable name must be self-explanatory.
 2.	Variable name must be in lower camel case.
+    
+    <u>**Example :**</u>
 
     Local Variable:   `lowerCamelCase`  *(local normal variable)*
 
 3.  Pointer type variables must be in camel case prefixed by *p*.
 
+    <u>**Example :**</u>
+
     Pointer Variable:   `int pSampleVar`  *(local pointer variable)*
 
 4.  Global variables that are declared inside a source file must be declared *static*.
+
+    <u>**Example :**</u>
+    
     Global static variable must be prefixed by *g*.
 
     Global Variable:    `static int gSampleVar` *(global normal variable)*
@@ -49,10 +56,14 @@
 6.  Constant variables should be written in capital case.
     Words should be separated by an underscore.
 
+    <u>**Example :**</u>
+
     Constant Variable:  `const int SIMPLE_VAR`  *(constant variable)*
 
 7.  All the variables that are declared in header files (with global scope),
     must be preceded by file name with underscore sperated by file name and variable name.
+
+    <u>**Example :**</u>
 
     Considering file name as, `app_sensor.h`,
 
@@ -61,7 +72,7 @@
     Header file pointer global variable:    `int *app_sensor_pDataReadyFlag`  *(global header file variable)*
 8.  All array name must have resonable suffix or prefix , like ***arr***, ***table***,***matrix*** to identify as array for example
 
-    Example :
+    <u>**Example :**</u>
     
     `int numbers[]`      **WRONG**
 
@@ -71,7 +82,7 @@
 
 9. Char array or pointer intended to be used as ASCII string must be suffixed or prefixed with ***string*** or ***str***
 
-    Example:
+    <u>**Example :**</u>
 
     `char strSample[]`
 
@@ -81,7 +92,8 @@
 
 9.  Variable name should never start with a verb.
 
-    Example:    
+    <u>**Example :**</u>  
+
     `runningDevice`     **WRONG**
 
     `isDeviceRunning`   **RIGHT**  
@@ -94,7 +106,9 @@
 3.  Typedef must be terminated with *_t*
 4.  Typedef tag (if used) should be same as typedef with the `tag` word appended.
 
-    Example: File name `app_sensor.c`
+    <u>**Example :**</u>
+
+    for file name `app_sensor.c`
 
             typedef enum app_sensor_tagDataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
@@ -114,7 +128,7 @@
 
     Now if these typedef variables are decalared anywhere, it must follow the variable naming conventions.
 
-    Example:
+    <u>**Example :**</u>
 
     `app_sensor_dataFetchState_t sampleVar`                     *(local normal variable)*
 
@@ -134,7 +148,7 @@
 2.  Function name must contain a verb, preferably start with verb.
 3.  Function name must be in upper camel case (Pascal Case)
     
-    Example:    `UpperCamelCase`
+    <u>**Example :**</u>    `UpperCamelCase`
 
 4.  Must be declared as static.
 5.  File name prefixing should not be used.    
@@ -143,25 +157,21 @@
 
 1.  Function name must contain a verb, preferably start with verb.
 2.  Function name must be in upper camel case (Pascal Case)
-
-    Example:    `example_file_UpperCamelCase`
-
 3.  Must be prefixed with file name.
 4.  File name and function name should be seperated using an underscore.
+
+    <u>**Example :**</u>  
+    
+    A function inside a file `app_sensor.h` can be `app_sensor_GetSensorData()`
 5.  Function name might be suffixed with their return type.`*`.  
 
-    -   Type uint32_t: use suffix *_ul*.
-    -   Type uint16_t: use suffix *_us*.
-    -   Type uint8_t: use suffix *_uc*.
-    -   Type void: use suffix *_v*.
-    -   Any other return type: use suffix *_x*.
-    -   Type pointer: use suffix *_p* in addition to the above return type.
+    -   Type uint32_t: use suffix *`_ul`*.
+    -   Type uint16_t: use suffix *`_us`*.
+    -   Type uint8_t: use suffix *`_uc`*.
+    -   Type void: use suffix *`_v`*.
+    -   Any other return type: use suffix *`_x`*.
+    -   Type pointer: use suffix *`_p`* in addition to the above return type.
   
-
-    Example:    file name `app_sensor.h`
-
-    `app_sensor_GetSensorData()`
-
 
 >  ### **ENUMERATIONS**
 
@@ -170,7 +180,9 @@
 3.	Enum elements must be all capital case. 
 4.	Enum elements must be followed by the enum typedef name.
 
-    Example: File name `app_sensor.c`
+    <u>**Example :**</u> 
+    
+    For file name `app_sensor.c`
 
             typedef enum app_sensor_tagDataFetchState        {
                 APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
