@@ -21,12 +21,13 @@
 
 >  ### **MACROS**
 
-1.  All capital case with words separated by an Underscore. 
-2.  Must be prefixed by the file name.
+1.  Must be prefixed by filename
+2.  All capital case with words separated by an Underscore. 
+3.  Must be prefixed by the file name.
 
     <u>**Example :**</u> Considering file name as, `app_sensor.h`,
 
-    Macro Name: `APP_SENSOR_DEVICE_ADDR`
+    Macro Name: `app_sensor_DEVICE_ADDR`
 
 >  ### **VARIABLES**
 
@@ -175,19 +176,20 @@
 
 >  ### **ENUMERATIONS**
 
-1.  Enum elements must be under a typedef.
-2.	Typedef naming conventions must be strictly followed.
-3.	Enum elements must be all capital case. 
-4.	Enum elements must be followed by the enum typedef name.
+1. Must be prefixed by file name
+2. Enum elements must be under a typedef.
+3.	Typedef naming conventions must be strictly followed.
+4.	Enum elements must be all capital case. 
+5.	Enum elements must be followed by the enum typedef name.
 
     <u>**Example :**</u> 
     
     For file name `app_sensor.c`
 
             typedef enum app_sensor_tagDataFetchState        {
-                APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
-                APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
-                APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
+                app_sensor_DATA_FETCH_STATE_INIT        =   1,
+                app_sensor_DATA_FETCH_STATE_FETCH       =   2,
+                app_sensor_DATA_FETCH_STATE_DEINIT      =   3    
             }app_sensor_dataFetchState_t;   
 
 >  ### **GENERIC**
