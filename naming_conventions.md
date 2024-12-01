@@ -91,13 +91,13 @@
 
     `char *pSampleStr`
 
-9.  Variable name should never start with a verb.
+9.  Verbs as the starting of variable name should be avoided 
 
     <u>**Example :**</u>  
 
-    `runningDevice`     **WRONG**
+    `runningDevice`     **Not preferred**
 
-    `isDeviceRunning`   **RIGHT**  
+    `isDeviceRunning`   **Preferred**  
 
 
 >  ### **TYPEDEFS**
@@ -110,13 +110,6 @@
     <u>**Example :**</u>
 
     for file name `app_sensor.c`
-
-            typedef enum app_sensor_tagDataFetchState        {
-                APP_SENSOR_DATA_FETCH_STATE_INIT        =   1,
-                APP_SENSOR_DATA_FETCH_STATE_FETCH       =   2,
-                APP_SENSOR_DATA_FETCH_STATE_DEINIT      =   3    
-            }app_sensor_dataFetchState_t;   
-
 
             typedef struct app_sensor_tagDevInfo     {
                 int deviceId;
@@ -176,21 +169,22 @@
 
 >  ### **ENUMERATIONS**
 
-1. Must be prefixed by file name
-2. Enum elements must be under a typedef.
-3.	Typedef naming conventions must be strictly followed.
-4.	Enum elements must be all capital case. 
-5.	Enum elements must be followed by the enum typedef name.
+1. Must be prefixed by file name in small
+2.	Typedef naming conventions must be strictly followed.
+3.	Enum elements must be all capital case. 
+4.	Enum elements must be followed by the enum typedef name, if its a typedef.
+5.	Enum typedef name must start with e 
+6.	enum elements name must start with e after the file name
 
     <u>**Example :**</u> 
     
     For file name `app_sensor.c`
 
             typedef enum app_sensor_tagDataFetchState        {
-                app_sensor_DATA_FETCH_STATE_INIT        =   1,
-                app_sensor_DATA_FETCH_STATE_FETCH       =   2,
-                app_sensor_DATA_FETCH_STATE_DEINIT      =   3    
-            }app_sensor_dataFetchState_t;   
+                app_sensor_eDATA_FETCH_STATE_INIT        =   1,
+                app_sensor_eDATA_FETCH_STATE_FETCH       =   2,
+                app_sensor_eDATA_FETCH_STATE_DEINIT      =   3    
+            }app_sensor_eDataFetchState_t;   
 
 >  ### **GENERIC**
 
